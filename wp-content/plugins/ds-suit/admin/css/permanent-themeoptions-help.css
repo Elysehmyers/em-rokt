@@ -1,0 +1,25 @@
+#epanel-content div.et-epanel-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#epanel-content .et-epanel-box div.et-box-title {
+    width: unset;
+    flex: 1;
+}
+
+#epanel-content .et-epanel-box div.et-box-title div.et-box-descr {
+    display: block;
+}
+
+#epanel-content .et-epanel-box div.et-box-content {
+    width: unset;
+    flex: 1;
+}
+
+#epanel-content .et-epanel-box span.et-box-description {
+    display: none;
+}

@@ -1,0 +1,508 @@
+@font-face {
+  font-family: 'SourceHanSans';
+  src:
+          url('./dist/fonts/SourceHanSans/WOFF/SourceHanSans-ExtraLight.woff') format('woff'), /* Modern Browsers */
+          url('./distfonts/SourceHanSans/TTF/SourceHanSans-ExtraLight.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 100;
+  font-style: normal;
+  unicode-range: U+3000-9FFF, U+ff??;
+}
+
+@font-face {
+  font-family: 'SourceHanSans';
+  src:
+          url('./distfonts/SourceHanSans/WOFF/SourceHanSans-Light.woff') format('woff'), /* Modern Browsers */
+          url('./distfonts/SourceHanSans/TTF/SourceHanSans-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 200;
+  font-style: normal;
+  unicode-range: U+3000-9FFF, U+ff??;
+}
+
+@font-face {
+  font-family: 'SourceHanSans';
+  src:
+          url('./distfonts/SourceHanSans/WOFF/SourceHanSans-Regular.woff') format('woff'), /* Modern Browsers */
+          url('./distfonts/SourceHanSans/TTF/SourceHanSans-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 400;
+  font-style: normal;
+  unicode-range: U+3000-9FFF, U+ff??;
+}
+
+@font-face {
+  font-family: 'SourceHanSans';
+  src:
+          url('./distfonts/SourceHanSans/WOFF/SourceHanSans-Medium.woff') format('woff'), /* Modern Browsers */
+          url('./distfonts/SourceHanSans/TTF/SourceHanSans-Medium.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 500;
+  font-style: normal;
+  unicode-range: U+3000-9FFF, U+ff??;
+}
+
+@font-face {
+  font-family: 'SourceHanSans';
+  src:
+          url('./distfonts/SourceHanSans/WOFF/SourceHanSans-Bold.woff') format('woff'), /* Modern Browsers */
+          url('./distfonts/SourceHanSans/TTF/SourceHanSans-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 700;
+  font-style: normal;
+  unicode-range: U+3000-9FFF, U+ff??;
+}
+
+@font-face {
+  font-family: 'SourceHanSans';
+  src:
+          url('./distfonts/SourceHanSans/WOFF/SourceHanSans-Heavy.woff') format('woff'), /* Modern Browsers */
+          url('./distfonts/SourceHanSans/TTF/SourceHanSans-Heavy.ttf')  format('truetype'); /* Safari, Android, iOS */
+  font-weight: 800;
+  font-style: normal;
+  unicode-range: U+3000-9FFF, U+ff??;
+}
+
+$source-hans-sans-font: source-han-sans-japanese;
+#jpn-class {
+  /* Header */
+  .header {
+    .primary-menu {
+      font-family: $source-hans-sans-font;
+    }
+  }
+
+  #stickHeader {
+    .header-desktop {
+      .header-right {
+        .right-list {
+          li {
+            a {
+              font-family: $source-hans-sans-font;
+            }
+            .btn-head {
+              font-family: $source-hans-sans-font;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .language-list {
+    li {
+      &:nth-child(3) {
+        font-family: $source-hans-sans-font;
+      }
+    }
+  }
+
+  #sidepanel {
+    .primary-menu {
+      li {
+        a {
+          font-family: $source-hans-sans-font;
+        }
+      }
+    }
+  }
+
+  /* Footer */
+  .footer {
+    .footer-menus {
+      ul {
+        li {
+          a {
+            font-family: $source-hans-sans-font;
+          }
+        }
+      }
+    }
+    .copyright {
+      span {
+        &:nth-child(2) {
+          font-family: $source-hans-sans-font;
+          a {
+            font-family: $source-hans-sans-font;
+          }
+        }
+      }
+    }
+  }
+
+  /* Acquire page */
+  .site-hero-section-container {
+    .banner-title-block {
+      .banner-caption {
+        font-family: $source-hans-sans-font;
+      }
+      .banner-tagline {
+        font-family: $source-hans-sans-font;
+      }
+      .banner-subcaption {
+        font-family: $source-hans-sans-font;
+      }
+    }
+    .banner-desc {
+      p {
+        font-family: $source-hans-sans-font;
+      }
+    }
+  }
+
+  .btn-style {
+    font-family: $source-hans-sans-font;
+  }
+
+  h1.common-section-title {
+    font-family: $source-hans-sans-font;
+  }
+
+  .confirmation-section {
+    .container-1 {
+      .confirmation-box {
+        h4 {
+          font-family: $source-hans-sans-font;
+        }
+        p {
+          font-family: $source-hans-sans-font;
+        }
+      }
+    }
+  }
+
+  #see_in_action {
+    font-family: $source-hans-sans-font;
+  }
+
+  .keep-convo-container {
+    .keep-convo-block {
+      h2 {
+        font-family: $source-hans-sans-font;
+      }
+      .keep-convo-content {
+        ul {
+          li {
+            font-family: $source-hans-sans-font;
+          }
+        }
+        p {
+          font-family: $source-hans-sans-font;
+        }
+      }
+      .keep-convo-link {
+        font-family: $source-hans-sans-font;
+      }
+    }
+  }
+
+  /* About us form */
+  .get-in-touch-section.container-1 {
+    h3 {
+      font-family: $source-hans-sans-font;
+    }
+    .signup-action {
+      font-family: $source-hans-sans-font;
+    }
+  }
+
+  .get-in-touch-section {
+    .cnt-form-hubspot {
+      p {
+        font-family: $source-hans-sans-font;
+      }
+      .hs-form {
+        input {
+          font-family: $source-hans-sans-font;
+        }
+      }
+      .hs_submit {
+        .hs-button {
+          font-family: $source-hans-sans-font;
+        }
+      }
+    }
+  }
+
+  .sbHolder {
+    font-family: $source-hans-sans-font;
+  }
+
+  /* About Us page */
+  .about-us-subhero {
+    .subhero-left {
+      .about-title {
+        font-family: $source-hans-sans-font;
+      }
+      .about-subtitle {
+        font-family: $source-hans-sans-font;
+      }
+    }
+    .subhero-right {
+      p {
+        font-family: $source-hans-sans-font;
+      }
+    }
+  }
+
+  body {
+    font-family: $source-hans-sans-font;
+  }
+
+  .about-team {
+    h2 {
+
+    }
+    .sec-staff {
+      .staff-item {
+        .staff-card {
+          h4 {
+            font-family: $source-hans-sans-font;
+          }
+          h5 {
+            font-family: $source-hans-sans-font;
+          }
+        }
+      }
+    }
+    .modal {
+      font-family: $source-hans-sans-font;
+      .team-name-pos {
+        .team-position {
+          font-family: $source-hans-sans-font;
+        }
+      }
+    }
+  }
+
+  .about-connections {
+    h1  {
+      font-family: $source-hans-sans-font;
+    }
+    .about-connections-container {
+      font-family: $source-hans-sans-font;
+    }
+  }
+
+  .about-job-listing-container {
+    .about-sel-loc {
+      font-family: $source-hans-sans-font;
+    }
+  }
+
+  .office-locations-container {
+    font-family: $source-hans-sans-font;
+  }
+
+  /* Calreply page */
+  .site-hero-section-container {
+    .banner-title-block {
+      .banner-caption {
+        font-family: $source-hans-sans-font;
+      }
+      .banner-tagline {
+        font-family: $source-hans-sans-font;
+      }
+    }
+    .banner-desc {
+      p {
+        font-family: $source-hans-sans-font;
+      }
+    }
+  }
+
+  .mobile-calendar-advantages {
+    .calreply-advantages-list {
+      h3 {
+        font-family: $source-hans-sans-font;
+      }
+      p {
+        font-family: $source-hans-sans-font;
+      }
+    }
+  }
+
+  /* Homepage page */
+  .grid-home-container {
+    .title-section {
+      font-family: $source-hans-sans-font;
+    }
+  }
+
+  .hero-wrapper {
+    .hero-bigtext {
+      font-family: $source-hans-sans-font;
+    }
+    .hero-subtext {
+      p {
+        small {
+          font-family: $source-hans-sans-font;
+        }
+      }
+    }
+  }
+  .see-how-it-works {
+      small {
+        font-family: $source-hans-sans-font;
+      }
+  }
+  .step {
+    .number {
+      font-family: $source-hans-sans-font;
+    }
+  }
+
+  .customer-experience {
+      .h3 {
+        font-family: $source-hans-sans-font;
+      }
+      .h5 {
+        font-family: $source-hans-sans-font;
+      }
+  }
+
+  .card-section {
+    ul {
+      li {
+        font-family: $source-hans-sans-font, FontAwesome;
+      }
+    }
+  }
+
+  h1, h2 {
+    font-family: $source-hans-sans-font;
+  }
+
+  .vchome-second-section {
+    .second-section-content {
+      font-family: $source-hans-sans-font;
+    }
+  }
+
+  .vchome-third-row {
+    .content-left-section {
+      p {
+        font-family: $source-hans-sans-font;
+      }
+    }
+  }
+  .testimonial-section {
+    .author {
+      p {
+        &:nth-child(2) {
+          font-family: $source-hans-sans-font;
+        }
+      }
+    }
+    .testimonial {
+      font-family: $source-hans-sans-font;
+    }
+  }
+
+  /* Monetize page */
+  .common-section-h2 {
+    font-family: $source-hans-sans-font;
+  }
+
+  .comman-section-subtitle {
+    font-family: $source-hans-sans-font;
+  }
+
+  /* Optimize page */
+  .container-1 {
+    font-family: $source-hans-sans-font;
+  }
+
+  .internal-marketing-container {
+    .confirmation-box {
+      p {
+        font-family: $source-hans-sans-font;
+      }
+    }
+  }
+
+  /* Press page */
+  .press-title {
+    p {
+      font-family: $source-hans-sans-font;
+      a {
+        font-family: $source-hans-sans-font;
+      }
+    }
+  }
+
+  .form-privacy-text {
+    font-family: $source-hans-sans-font;
+  }
+
+  /* Case-studies page */
+  .case-study-container {
+    .filter-control {
+      li {
+        font-family: $source-hans-sans-font;
+      }
+    }
+  }
+
+  .banner-container-2 {
+    .banner-style-2 {
+      .banner-intro-2 {
+        .banner-caption-2 {
+            h3 {
+              font-family: $source-hans-sans-font;
+            }
+            .banner-2-link {
+              font-family: $source-hans-sans-font;
+            }
+        }
+      }
+    }
+  }
+
+  /* Case Study - Post */
+  .case-study {
+    .splash {
+      .post {
+        .writeup {
+          .tags {
+            font-family: $source-hans-sans-font;
+          }
+          .title {
+            font-family: $source-hans-sans-font;
+          }
+        }
+      }
+    }
+    .container {
+      .visual-composer-wrapper {
+        h1 {
+          font-family: $source-hans-sans-font;
+        }
+        p {
+          font-family: $source-hans-sans-font;
+        }
+      }
+    }
+    .results {
+      .title {
+        font-family: $source-hans-sans-font;
+      }
+      .text-results {
+        .col {
+          p {
+            &:nth-child(2) {
+              font-family: $source-hans-sans-font;
+            }
+          }
+        }
+      }
+    }
+    .quote {
+      .author {
+          p {
+            font-family: $source-hans-sans-font;
+          }
+      }
+      .writeup {
+          p {
+            font-family: $source-hans-sans-font;
+          }
+      }
+    }
+  }
+}

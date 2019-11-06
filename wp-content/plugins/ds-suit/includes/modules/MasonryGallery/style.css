@@ -1,0 +1,43 @@
+.et-fb-all-modules .dss_masonry_gallery:before {
+    content: "'" !important;
+    /* font-family: 'ETmodules' !important; */
+}
+
+.et-fb-all-modules .dss_masonry_gallery {
+    background-color: #3949ab !important;
+    color: white !important;
+    overflow: visible !important;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.et-fb-all-modules .dss_masonry_gallery span {
+    font-size: 10px !important;
+}
+
+.et-fb-all-modules .dss_masonry_gallery:after {
+    content: "";
+    background-size: 40px 40px;
+    background-image: url('./../../../admin/assets/divi-sensei-64.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+}
+
+.dss_masonry_gallery,
+.dss_masonry_gallery .grid-item {
+    overflow: hidden !important;
+}
+
+.dss_masonry_gallery .grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+small.dss_masonry_gallery_caption {
+
+}

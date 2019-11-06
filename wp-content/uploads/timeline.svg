@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="111px" height="1311px" viewBox="0 0 111 1311" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-35.0%" y="-26.6%" width="170.1%" height="153.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="8.05803571" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-45.6%" y="-26.6%" width="191.2%" height="153.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="8.05803571" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(21.000000, 21.000000)">
+            <path d="M28.6666667,45.9983403 L28.6666667,1251" id="Timeline-Line" stroke="#D41870" stroke-width="2" stroke-linecap="square"></path>
+            <rect id="Grey-Block-Copy-2" fill="#F8F6F5" filter="url(#filter-1)" x="0" y="1178" width="69" height="91"></rect>
+            <rect id="Grey-Block-Copy-3" fill="#F8F6F5" filter="url(#filter-2)" x="0" y="0" width="53" height="91"></rect>
+        </g>
+    </g>
+</svg>

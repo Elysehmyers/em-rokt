@@ -1,0 +1,60 @@
+.et-fb-all-modules .dss_footer:before {
+    content: '' !important;
+    font-family: 'ETmodules' !important;
+}
+
+.et-fb-all-modules .dss_footer {
+    background-color: #3949ab !important;
+    color: white !important;
+    overflow: visible !important;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.et-fb-all-modules .dss_footer span {
+    font-size: 10px !important;
+}
+
+.et-fb-all-modules .dss_footer:after {
+    content: "";
+    background-size: 40px 40px;
+    background-image: url('./../../../admin/assets/divi-sensei-64.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+}
+
+.dss_footer footer .container:before {
+    content: none !important;
+}
+
+.dss_footer footer .container {
+    padding-top: 0 !important;
+}
+
+.dss_footer footer .footer-widget .et_pb_widget {
+    width: 100% !important;
+}
+
+.dss_footer footer ul {
+    padding: 0;
+    line-height: 23px;
+    list-style-type: none;
+}
+
+.dss_footer footer ul.bottom-nav {
+    padding: 15px 0;
+}
+
+.et_divi_theme .dss_footer #footer-bottom {
+    padding-bottom: 5px !important;
+}
+
+.et_fb_preview_active .et_fb_hidden_header .dss_footer #main-footer {
+    opacity: 1;
+    z-index: unset;
+}

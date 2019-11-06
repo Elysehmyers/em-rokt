@@ -1,0 +1,44 @@
+.et-fb-all-modules .dss_post_meta_parent:before {
+    content: '\70' !important;
+    font-family: 'ETmodules' !important;
+}
+
+.et-fb-all-modules .dss_post_meta_parent {
+    background-color: #3949ab !important;
+    color: white !important;
+    overflow: visible !important;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.et-fb-all-modules .dss_post_meta_parent span {
+    font-size: 10px !important;
+}
+
+.et-fb-all-modules .dss_post_meta_parent:after {
+    content: "";
+    background-size: 40px 40px;
+    background-image: url('./../../../admin/assets/divi-sensei-64.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+}
+
+
+
+
+.dss_post_meta_item span.icon {
+font-family: 'ETmodules' !important;
+}
+
+/* .dss_post_meta_item span {
+vertical-align: top;
+} */
+
+.dss_post_meta_direction_horizontal .dss_post_meta_item {
+display: inline;
+}

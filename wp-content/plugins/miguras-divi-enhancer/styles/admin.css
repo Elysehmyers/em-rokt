@@ -1,0 +1,19 @@
+.fs-addon[data-slug="divi-enhancer-pro"] .fs-price {
+    height: 18px;
+    width: 100%;
+    display: block;
+    position: relative !important;
+}
+
+.fs-addon[data-slug="divi-enhancer-pro"] .fs-price:after {
+    content: "$26.90";
+    color: #ff0396;
+    display: inline-block;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    font-weight: bold;
+    left: 0;
+    z-index: 999;
+    padding: 0 10px 0 0;
+}

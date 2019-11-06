@@ -1,0 +1,32 @@
+/*======================= FOODMENU ===================*/
+/*========================================================*/
+
+/*general*/
+.divienhancer_foodmenu {
+    overflow-y: hidden;
+}
+
+.divienhancer_foodmenu_image {
+  display: block;
+}
+
+
+
+/*Style 1*/
+.divienhancer_menu_style_1 .divienhancer_foodmenu_image {
+    width: 40%;
+    display: block;
+    clear: right;
+    float: right;
+}
+
+.divienhancer_menu_style_1 .divienhancer_foodmenu_title,
+.divienhancer_menu_style_1 .divienhancer_foodmenu_subtitle,
+.divienhancer_menu_style_1 .divienhancer_foodmenu_price,
+.divienhancer_menu_style_1 .divienhancer_foodmenu_content,
+{
+    width: 55%;
+    float: left;
+    padding-right: 5%;
+    clear: left;
+}

@@ -1,0 +1,27 @@
+.et-fb-all-modules .et-fb-all-modules li[class^="dss_"],
+.et-fb-all-modules .et-fb-all-modules li[class*=" dss_"] {
+    background-color: #3949ab !important;
+    color: white !important;
+    overflow: visible !important;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.et-fb-all-modules li[class^="dss_"] span, 
+.et-fb-all-modules li[class*=" dss_"] span {
+    font-size: 10px !important;
+}
+
+.et-fb-all-modules li[class^="dss_"]:after,
+.et-fb-all-modules li[class*=" dss_"]:after {
+    content: "";
+    background-size: 40px 40px;
+    background-image: url('./../admin/assets/divi-sensei-64.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -10px;
+    left: -15px;
+    width: 40px;
+    height: 40px;
+}

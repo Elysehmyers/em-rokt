@@ -1,0 +1,70 @@
+/*======================= TEAM MEMBERS ===================*/
+/*========================================================*/
+
+/*General*/
+.divienhancer_team_member {
+  position: relative;
+  overflow: hidden;
+}
+.divienhancer_team_member_networks {
+    margin-top: 2em;
+    float: left;
+    display: block;
+    width: 100%;
+}
+
+.divienhancer_team_member_content {
+  position: relative;
+  padding: 5%;
+  float: left;
+  width: 100%;
+}
+
+.divienhancer_member_icons_left a {
+    width: 14%;
+    display: block;
+    float: left;
+    text-align: left;
+}
+
+.divienhancer_member_icons_center a {
+    width: 33.3%;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.divienhancer_member_icons_right a {
+    width: 14%;
+    display: block;
+    float: right;
+    text-align: right;
+}
+
+.divienhancer_team_member_image {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+/*Effect 1*/
+.divienhancer_team_member.effect_1 img {
+    border-radius: 1000px;
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    border: 7px solid #ffffff;
+}
+
+.divienhancer_team_member.effect_1 .divienhancer_team_member_networks {
+    border-top: 1px solid #333;
+}
+
+.divienhancer_team_member.effect_1 .divienhancer_team_member_networks {
+    padding: 15px 0;
+}
+
+
+.divienhancer_team_member.effect_1 .divienhancer_team_member_description  {
+  padding:5% 0;
+}

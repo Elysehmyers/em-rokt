@@ -1,0 +1,20 @@
+/*======================= Bing Map ===================*/
+/*========================================================*/
+.divienhancer_bing_map {
+  max-width: 100%;
+
+}
+
+.bingmap_not_preview {
+    max-width: 100%;
+    background-color: #f7305e;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.bingmap_not_preview_title {
+  font-size: 30px;
+  line-height: 1.2em;
+  font-weight: 700;
+}

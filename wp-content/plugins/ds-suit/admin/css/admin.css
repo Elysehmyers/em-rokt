@@ -1,0 +1,237 @@
+.et-pb-all-modules .dss_another_post:before,
+.et_pb_saved_layouts_list .dss_another_post:before {
+    content: "b";
+    font-family: 'ETmodules' !important;
+}
+
+.et-pb-all-modules .dss_video_lightbox:before,
+.et_pb_saved_layouts_list .dss_video_lightbox:before {
+    content: 'q' !important;
+}
+
+.et-pb-all-modules .dss_bucket:before,
+.et_pb_saved_layouts_list .dss_bucket:before {
+    content: '\26' !important;
+}
+
+.et-pb-all-modules .dss_footer:before,
+.et_pb_saved_layouts_list .dss_footer:before {
+    content: '' !important;
+    font-family: 'ETmodules' !important;
+}
+
+.et-pb-all-modules .dss_library_layout:before,
+.et_pb_saved_layouts_list .dss_library_layout:before {
+    content: "" !important;
+    font-family: 'ETmodules' !important;
+}
+
+.et-pb-all-modules .dss_post_meta_parent:before,
+.et_pb_saved_layouts_list .dss_post_meta_parent:before {
+    content: '\70' !important;
+    font-family: 'ETmodules' !important;
+}
+
+.et-pb-all-modules .dss_post_title:before,
+.et_pb_saved_layouts_list .dss_post_title:before {
+    content: '\61' !important;
+}
+
+.et-pb-all-modules .dss_post_button:before,
+.et_pb_saved_layouts_list .dss_post_button:before {
+    content: '\7c' !important;
+}
+
+.et-pb-all-modules .dss_post_excerpt:before,
+.et_pb_saved_layouts_list .dss_post_excerpt:before {
+    content: "" !important;
+    font-family: 'ETmodules' !important;
+}
+
+.et-pb-all-modules .dss_post_featured_image:before,
+.et_pb_saved_layouts_list .dss_post_featured_image:before {
+    content: '\26' !important;
+}
+
+.et-pb-all-modules .dss_another_post,
+.et_pb_saved_layouts_list .dss_another_post,
+.et-pb-all-modules .dss_video_lightbox,
+.et_pb_saved_layouts_list .dss_video_lightbox,
+.et-pb-all-modules .dss_bucket,
+.et_pb_saved_layouts_list .dss_bucket,
+.et-pb-all-modules .dss_footer,
+.et_pb_saved_layouts_list .dss_footer,
+.et-pb-all-modules .dss_library_layout,
+.et_pb_saved_layouts_list .dss_library_layout,
+.et-pb-all-modules .dss_post_meta_parent,
+.et_pb_saved_layouts_list .dss_post_meta_parent,
+.et-pb-all-modules .dss_post_title,
+.et_pb_saved_layouts_list .dss_post_title,
+.et-pb-all-modules .dss_post_button,
+.et_pb_saved_layouts_list .dss_post_button,
+.et-pb-all-modules .dss_post_excerpt,
+.et_pb_saved_layouts_list .dss_post_excerpt,
+.et-pb-all-modules .dss_post_featured_image,
+.et_pb_saved_layouts_list .dss_post_featured_image {
+    background-color: #3949ab !important;
+    color: white !important;
+}
+
+.et-pb-all-modules .dss_another_post:after,
+.et_pb_saved_layouts_list .dss_another_post:after,
+.et-pb-all-modules .dss_video_lightbox:after,
+.et_pb_saved_layouts_list .dss_video_lightbox:after,
+.et-pb-all-modules .dss_bucket:after,
+.et_pb_saved_layouts_list .dss_bucket:after,
+.et-pb-all-modules .dss_footer:after,
+.et_pb_saved_layouts_list .dss_footer:after,
+.et-pb-all-modules .dss_library_layout:after,
+.et_pb_saved_layouts_list .dss_library_layout:after,
+.et-pb-all-modules .dss_post_meta_parent:after,
+.et_pb_saved_layouts_list .dss_post_meta_parent:after,
+.et-pb-all-modules .dss_post_title:after,
+.et_pb_saved_layouts_list .dss_post_title:after,
+.et-pb-all-modules .dss_post_button:after,
+.et_pb_saved_layouts_list .dss_post_button,
+.et-pb-all-modules .dss_post_excerpt:after,
+.et_pb_saved_layouts_list .dss_post_excerpt,
+.et-pb-all-modules .dss_post_featured_image:after,
+.et_pb_saved_layouts_list .dss_post_featured_image:after {
+    content: url('./../assets/divi-sensei-64.png');
+    position: absolute;
+    top: 6px;
+    right: 0px;
+}
+
+
+/* Freemius Add-On Page */
+#fs_addons .fs-cards-list li.fs-card.fs-addon {
+    height: 170px;
+}
+
+#fs_addons .fs-cards-list .fs-card .fs-inner li.fs-offer {
+    min-height: 18px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+#fs_addons .fs-cards-list .fs-card .fs-inner li.fs-cta a.button {
+    top: 135px;
+}
+#fs_addons .fs-cards-list .fs-card .fs-inner .fs-dropdown .button-group .button.button{
+    top: 20px
+}
+
+
+.price-list-wrapper form {
+    text-align: center;
+}
+
+.price-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.price-list {
+    max-width: 400px;
+    min-width: 200px;
+    flex: 1;
+    margin: 10px;
+    text-align: center;
+    background: white;
+    border: 1px solid lightgray;
+}
+
+.bundle-page-wrapper .price-list h2 {
+    font-size: 2rem;
+}
+
+.bundle-page-wrapper .description {
+    text-align: center;
+    max-width: 820px;
+    margin: auto;
+}
+
+.bundle-page-wrapper .price-list .price {
+    margin-bottom: 10px;
+}
+
+.bundle-page-wrapper .price-list .price .price-component {
+    display: flex;
+    justify-content: center;
+}
+
+.bundle-page-wrapper .price-list .price .price-component .price-super {
+    font-size: 6rem;
+    line-height: 1;
+}
+
+
+.bundle-page-wrapper .price-list .price .price-component .price-super:before {
+    content: '';
+    margin-top: -1rem;
+    display: block;
+    height: 0;
+    width: 0;
+}
+
+
+.bundle-page-wrapper .price-list .price .price-component .price-currency {
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.bundle-page-wrapper .price-list .price .price-component .price-currency:before{
+    content: '';
+    margin-top: -0.2rem;
+    display: block;
+    height: 0;
+    width: 0;
+}
+
+
+.bundle-page-wrapper .price-list .purchase {
+    margin: 10px 0 20px;
+    background: #3949ab;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.bundle-page-wrapper .price-list .only {
+    margin-bottom: 10px;
+}
+
+.bundle-page-wrapper .price-list .spacer {
+    background: lightgray;
+    height: 1px;
+    width: 50%;
+    margin: auto;
+}
+
+.bundle-page-wrapper .price-list .feature {
+    margin: 10px 0;
+}
+
+.bundle-page-wrapper .price-list .feature.negative {
+    text-decoration: line-through;
+    color: lightgray;
+}
+
+
+.ds-suit-notice {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.ds-suit-notice img {
+    display: block;
+    width: 40px;
+    height: auto;
+    margin: 10px 10px 10px 0;
+}
