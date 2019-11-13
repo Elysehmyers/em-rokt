@@ -7,12 +7,12 @@
  * @license     GPL2+
  *
  * Plugin Name: Popups for Divi
- * Plugin URI:  https://philippstracker.com/divi-popup/
+ * Plugin URI:  https://divimode.com/divi-popup/
  * Description: Finally a simple and intuitive way to add custom popups to your Divi pages!
  * Author:      Philipp Stracker
  * Author URI:  https://philippstracker.com/
  * Created:     30.12.2017
- * Version:     1.6.3
+ * Version:     1.7.0
  * License:     GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: divi-popup
@@ -39,7 +39,7 @@ define( 'DIVI_POPUP_PLUGIN', plugin_basename( __FILE__ ) );
 /**
  * A new version value will force refresh of CSS and JS files for all users.
  */
-define( 'DIVI_POPUP_VERSION', '1.6.3' );
+define( 'DIVI_POPUP_VERSION', '1.7.0' );
 
 add_action(
 	'plugins_loaded',

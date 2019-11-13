@@ -7,23 +7,39 @@ function divienhancer_scripts(){
     /*================================== FLIPBOX ============================*/
     /*============================================================================*/
     function divienhancer_flipbox(){
-      jQuery('.divienhancer_flipBox').each(function(){
-        var $firstBox = jQuery(this).find('.divienhancer_flipBoxChild:nth-child(1)').outerHeight();
-        var $secondBox = jQuery(this).find('.divienhancer_flipBoxChild:nth-child(2)').outerHeight();
+      jQuery('.divienhancer-flipper').each(function(){
+      var $firstBox = jQuery(this).find('.divienhancer_flipBoxChild:nth-child(1)');
+      var $secondBox = jQuery(this).find('.divienhancer_flipBoxChild:nth-child(2)');
+      var $axis = jQuery(this).attr('data-axis');
+      var $speed = jQuery(this).attr('data-speed');
+      var $firstwidth = $firstBox.find('.divienhancer_flipbox_box').outerWidth();
+      var $firstheight = $firstBox.find('.divienhancer_flipbox_box').outerHeight();
+      var $secondwidth = $secondBox.find('.divienhancer_flipbox_box').outerWidth();
+      var $secondheight = $secondBox.find('.divienhancer_flipbox_box').outerHeight();
+      var $finalwidth = '';
+      var $finalheight = '';
 
-        if($firstBox > $secondBox){
-          jQuery(this).find('.divienhancer_flipBoxChild:nth-child(2)').css({height: $firstBox});
-          jQuery(this).find('.divienhancer_flip_container').css({height: $firstBox});
-        }
-        else {
-          jQuery(this).find('.divienhancer_flipBoxChild:nth-child(1)').css({height: $secondBox});
-          jQuery(this).find('.divienhancer_flip_container').css({height: $secondBox});
-        }
+      if($firstwidth < $secondwidth) {
+        $secondBox.find('.divienhancer_flipbox_box').css({width: $firstwidth, margin:' 0 auto' })
+      }
+      else {
+        $firstBox.find('.divienhancer_flipbox_box').css({width: $secondwidth, margin:' 0 auto'  })
+      }
+
+      $firstBox.addClass('front');
+      $secondBox.addClass('back');
+
+      jQuery(this).flip({
+        axis: $axis,
+        trigger: 'hover',
+        speed: $speed,
+
+      });
 
       }) // end of each
 
     }
-    divienhancer_flipbox();
+
 
 
     /*================================== TIMELINE ============================*/
@@ -45,7 +61,7 @@ function divienhancer_scripts(){
       }) // end of timeLine each
 
     }
-    divienhancer_timeline();
+
 
 
     /*================================== MODAL POPUP ============================*/
@@ -184,12 +200,12 @@ function divienhancer_scripts(){
       })
 
     }
-    free_divienhancer_sticky();
 
 
 
 
-    divienhancer_modal_popup();
+
+
 
     /*=========================== DIVIENHANCER TWENTYTWENTY IMAGE COMPARISON ===============================*/
     function divienhancer_image_comparison(){
@@ -200,7 +216,7 @@ function divienhancer_scripts(){
         var $orientation = jQuery(this).attr('data-orientation');
         var $overlay = jQuery(this).attr('data-overlay'); if($overlay == 'false'){$overlay = false;}else {$overlay = true;}
         var $slideronhover = jQuery(this).attr('data-slideronhover'); if($slideronhover == 'false'){$slideronhover = false;}else {$slideronhover = true;}
-        var $withhandle = jQuery(this).attr('data-withhandle'); if($withhandle == 'false'){$withhandle = false;}else {$o$withhandleverlay = true;}
+        var $withhandle = jQuery(this).attr('data-withhandle'); if($withhandle == 'false'){$withhandle = false;}else {$withhandle = true;}
         var $clicktomove = jQuery(this).attr('data-clicktomove'); if($clicktomove == 'false'){$clicktomove = false;}else {$clicktomove = true;}
 
         jQuery(this).twentytwenty({
@@ -215,7 +231,7 @@ function divienhancer_scripts(){
         });
       })
     }
-    divienhancer_image_comparison();
+
 
 
 
@@ -228,113 +244,112 @@ function divienhancer_scripts(){
       });
 
     }
-    divienhancer_ihover_function();
 
 
+    /*=================== DIVIENHANCER INTERACTIVE BACKGROUND IMAGE =============*/
+    function divienhancer_interactive_background(){
+      jQuery(function($){
+
+        $('.divienhancer-interactive_bg').each(function(){
+          var $background = $(this).css('background-image')
+          var $interactivebgstrength = $(this).attr('data-interactivebgstrength');
+          $interactivebgstrength = $interactivebgstrength.replace('px', ' ');
+
+          var $interactivebgscale = $(this).attr('data-interactivebgscale');
+          $interactivebgscale = $interactivebgscale.replace('px', ' ');
+          $interactivebgscale = '1.'+$interactivebgscale;
+
+          var $interactivebganimationspeed = $(this).attr('data-interactivebganimationspeed');
+          $interactivebganimationspeed = $interactivebganimationspeed.replace('px', ' ');
+          $interactivebganimationspeed = $interactivebganimationspeed+'ms';
+
+          $background = $background.replace('url(','').replace(')','').replace(/\"/gi, "");
+          $(this).attr('data-ibg-bg', $background);
+          $(this).css('background-image', 'none');
+
+          $(this).interactive_bg({
+           strength: parseInt($interactivebgstrength),              // Movement Strength when the cursor is moved. The higher, the faster it will reacts to your cursor. The default value is 25.
+           scale: parseInt($interactivebgscale),               // The scale in which the background will be zoomed when hovering. Change this to 1 to stop scaling. The default value is 1.05.
+           animationSpeed: $interactivebganimationspeed,   // The time it takes for the scale to animate. This accepts CSS3 time function such as "100ms", "2.5s", etc. The default value is "100ms".
+           contain: true,             // This option will prevent the scaled object/background from spilling out of its container. Keep this true for interactive background. Set it to false if you want to make an interactive object instead of a background. The default value is true.
+           wrapContent: false         // This option let you choose whether you want everything inside to reacts to your cursor, or just the background. Toggle it to true to have every elements inside reacts the same way. The default value is false
+         });
+
+        });
+
+
+      })
+    }
+
+
+
+    /*================================= DIVIENHANCER BING MAP =====================================*/
+
+
+
+    function divienhancer_bing_map_script(){
+      jQuery(window).load(function (){
+
+        jQuery('.divienhancer_bing_map').each(function(){
+          var $key = jQuery('body').attr('data-debingkey');
+          var $mapid = jQuery(this).attr('id');
+          var $latitude = jQuery(this).attr('data-latitude');
+          var $longitude = jQuery(this).attr('data-longitude');
+          var $zoom = jQuery(this).attr('data-zoom');
+          var $maptypedata = jQuery(this).attr('data-type');
+          var $maptype = 'Microsoft.Maps.MapTypeId.'+$maptypedata;
+
+
+          var map = new Microsoft.Maps.Map('#'+$mapid, {
+            credentials: $key,
+            center: new Microsoft.Maps.Location($latitude, $longitude),
+            mapTypeId: eval($maptype),
+            zoom: parseInt($zoom)
+           });
+        });
+
+      });
+    }
+
+
+
+    /**
+    ** Change Divienhancer Option Name*
+    */
+    function set_divienhancer_option_name(){
+      if(jQuery('.et-fb-tabs__panel--DE').hasClass('divienhancer_name_setted')){
+
+      }
+      else {
+
+      jQuery('.et-fb-tabs__panel--DE').find('.et-fb-form__toggle-title').find('h3').text('Divi Enhancer Options');
+      jQuery('.et-fb-tabs__panel--DE').addClass('divienhancer_name_setted');
+      }
+    }
+
+
+
+
+    return {
+      divienhancer_image_comparison: divienhancer_image_comparison,
+      divienhancer_modal_popup: divienhancer_modal_popup,
+      free_divienhancer_sticky: free_divienhancer_sticky,
+      divienhancer_timeline: divienhancer_timeline,
+      divienhancer_flipbox: divienhancer_flipbox,
+      divienhancer_ihover_function: divienhancer_ihover_function,
+      divienhancer_interactive_background: divienhancer_interactive_background,
+      divienhancer_bing_map_script: divienhancer_bing_map_script,
+      set_divienhancer_option_name: set_divienhancer_option_name,
+    }
 
 
 } // eND OF DIVIENHANCER_SCRIPTS FUNCTION
 
-function divienhancer_only_front_scripts(){
 
-
-      /*=================== DIVIENHANCER INTERACTIVE BACKGROUND IMAGE =============*/
-      function divienhancer_interactive_background(){
-        jQuery(function($){
-
-          $('.divienhancer-interactive_bg').each(function(){
-            var $background = $(this).css('background-image')
-            var $interactivebgstrength = $(this).attr('data-interactivebgstrength');
-            $interactivebgstrength = $interactivebgstrength.replace('px', ' ');
-
-            var $interactivebgscale = $(this).attr('data-interactivebgscale');
-            $interactivebgscale = $interactivebgscale.replace('px', ' ');
-            $interactivebgscale = '1.'+$interactivebgscale;
-
-            var $interactivebganimationspeed = $(this).attr('data-interactivebganimationspeed');
-            $interactivebganimationspeed = $interactivebganimationspeed.replace('px', ' ');
-            $interactivebganimationspeed = $interactivebganimationspeed+'ms';
-
-            $background = $background.replace('url(','').replace(')','').replace(/\"/gi, "");
-            $(this).attr('data-ibg-bg', $background);
-            $(this).css('background-image', 'none');
-
-            $(this).interactive_bg({
-             strength: parseInt($interactivebgstrength),              // Movement Strength when the cursor is moved. The higher, the faster it will reacts to your cursor. The default value is 25.
-             scale: parseInt($interactivebgscale),               // The scale in which the background will be zoomed when hovering. Change this to 1 to stop scaling. The default value is 1.05.
-             animationSpeed: $interactivebganimationspeed,   // The time it takes for the scale to animate. This accepts CSS3 time function such as "100ms", "2.5s", etc. The default value is "100ms".
-             contain: true,             // This option will prevent the scaled object/background from spilling out of its container. Keep this true for interactive background. Set it to false if you want to make an interactive object instead of a background. The default value is true.
-             wrapContent: false         // This option let you choose whether you want everything inside to reacts to your cursor, or just the background. Toggle it to true to have every elements inside reacts the same way. The default value is false
-           });
-
-          });
-
-
-        })
-      }
-      divienhancer_interactive_background();
-
-
-
-      /*================================= DIVIENHANCER BING MAP =====================================*/
-
-
-
-      function divienhancer_bing_map_script(){
-        jQuery(window).load(function (){
-
-          jQuery('.divienhancer_bing_map').each(function(){
-            var $key = jQuery('body').attr('data-debingkey');
-            var $mapid = jQuery(this).attr('id');
-            var $latitude = jQuery(this).attr('data-latitude');
-            var $longitude = jQuery(this).attr('data-longitude');
-            var $zoom = jQuery(this).attr('data-zoom');
-            var $maptypedata = jQuery(this).attr('data-type');
-            var $maptype = 'Microsoft.Maps.MapTypeId.'+$maptypedata;
-
-
-            var map = new Microsoft.Maps.Map('#'+$mapid, {
-              credentials: $key,
-              center: new Microsoft.Maps.Location($latitude, $longitude),
-              mapTypeId: eval($maptype),
-              zoom: parseInt($zoom)
-             });
-          });
-
-        });
-      }
-      divienhancer_bing_map_script();
-
-
-
-
-
-} // eND OF divienhancer_only_front_scripts FUNCTION
-
-
-function divienhancer_only_back_functions(){
-
-
-      /**
-      ** Change Divienhancer Option Name*
-      */
-      function set_divienhancer_option_name(){
-        if(jQuery('.et-fb-tabs__panel--DE').hasClass('divienhancer_name_setted')){
-
-        }
-        else {
-
-        jQuery('.et-fb-tabs__panel--DE').find('.et-fb-form__toggle-title').find('h3').text('Divi Enhancer Options');
-        jQuery('.et-fb-tabs__panel--DE').addClass('divienhancer_name_setted');
-        }
-      }
-      set_divienhancer_option_name();
-}
 
 
 //BUILDER
 jQuery(function($) {
-
 
 
 });
@@ -344,8 +359,14 @@ jQuery(document).ready(function(){
 
 
   if(jQuery("#et-fb-app").length == 0) {
-    divienhancer_scripts();
-    divienhancer_only_front_scripts();
+    divienhancer_scripts().divienhancer_image_comparison();
+    divienhancer_scripts().divienhancer_modal_popup();
+    divienhancer_scripts().free_divienhancer_sticky();
+    divienhancer_scripts().divienhancer_timeline();
+    divienhancer_scripts().divienhancer_flipbox();
+    divienhancer_scripts().divienhancer_ihover_function();
+    divienhancer_scripts().divienhancer_interactive_background();
+    divienhancer_scripts().divienhancer_bing_map_script();
   }
 
 })

@@ -64,6 +64,8 @@ function divienhancer_scripts_and_styles(){
     }
   }
 
+  wp_enqueue_script( 'divienhancer-flipbox', plugin_dir_url( __FILE__ ) . 'scripts/jquery.flip.min.js' );
+
 
   //general scripts
 	wp_enqueue_style( 'divienhancer-custom',  plugin_dir_url( __FILE__ ) . 'styles/custom.css', rand(1, 100) );

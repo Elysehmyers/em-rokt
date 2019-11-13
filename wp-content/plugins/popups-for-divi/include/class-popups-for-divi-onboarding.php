@@ -104,7 +104,7 @@ class Popups_For_Divi_Onboarding {
 
 		// Send the subscription details to our website.
 		$resp = wp_remote_post(
-			'https://philippstracker.com/wp-admin/admin-post.php',
+			'https://divimode.com/wp-admin/admin-post.php',
 			array(
 				'headers' => array(
 					'Content-Type' => 'application/x-www-form-urlencoded; charset=utf-8',
@@ -160,7 +160,7 @@ class Popups_For_Divi_Onboarding {
 					</button>
 				</div>
 			</div>
-			<p class="privacy"><?php _e( 'Only your name and email is sent to our website. We use the information to deliver the onboarding mails. Nothing else. <a href="https://philippstracker.com/privacy/" target="_blank">Privacy&nbsp;Policy</a>', 'divi-popup' ); ?></p>
+			<p class="privacy"><?php _e( 'Only your name and email is sent to our website. We use the information to deliver the onboarding mails. <a href="https://divimode.com/privacy/" target="_blank">Privacy&nbsp;Policy</a>', 'divi-popup' ); ?></p>
 			<div class="loader"><span class="spinner is-active"></span></div>
 			<span class="notice-dismiss"><?php _e( 'Close forever', 'divi-popup' ); ?></span>
 		</div>

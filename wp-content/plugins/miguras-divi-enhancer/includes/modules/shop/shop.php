@@ -611,6 +611,7 @@ class DIVIENHANCER_shop extends Et_Builder_Module {
 				'type'            => 'color-alpha',
 				'tab_slug'        => 'advanced',
 				'toggle_slug'     => 'product',
+			
 			),
 			'product_padding' => array(
 				'label'           => esc_html__( 'Column Padding', 'divienhancer' ),

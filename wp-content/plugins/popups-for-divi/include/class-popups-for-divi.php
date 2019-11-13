@@ -56,7 +56,7 @@ class Popups_For_Divi {
 	public function plugin_add_settings_link( $links ) {
 		$links[] = sprintf(
 			'<a href="%s" target="_blank">%s</a>',
-			'https://philippstracker.com/divi-popup/',
+			'https://divimode.com/divi-popup/',
 			__( 'How it works', 'divi-popup' )
 		);
 		return $links;
@@ -82,7 +82,7 @@ class Popups_For_Divi {
 
 		$plugin_meta[] = sprintf(
 			'<a href="%s" target="_blank">%s</a>',
-			'https://philippstracker.com/divi-areas-pro/',
+			'https://divimode.com/divi-areas-pro/',
 			__( 'Divi Areas <strong>Pro</strong>', 'divi-popup' )
 		);
 
@@ -358,7 +358,7 @@ class Popups_For_Divi {
 		 *
 		 * @since 1.3.0 Default value is WP_DEBUG. Before it, default was false.
 		 */
-		$config['debug'] = defined( WP_DEBUG ) ? WP_DEBUG : false;
+		$config['debug'] = defined( 'WP_DEBUG' ) ? WP_DEBUG : false;
 
 		/* -- End of default configuration -- */
 

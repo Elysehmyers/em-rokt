@@ -174,6 +174,34 @@ class DIVIENHANCER_flipbox extends ET_Builder_Module {
 
 	public function get_fields() {
 		$fields = array(
+			'axis' => array(
+				'default'         => 'y',
+				'label'           => esc_html__( 'Axis', 'divienhancer' ),
+				'type'            => 'select',
+				'options'         => array(
+					'y'  => esc_html__( 'Horizontal', 'divienhancer' ),
+					'x'  => esc_html__( 'Vertical', 'divienhancer' ),
+				),
+				'tab_slug'        => 'general',
+				'toggle_slug'     => 'main_content',
+			),
+
+			'speed' => array(
+				'label'           => esc_html__( 'Speed', 'divienhancer' ),
+				'type'            => 'range',
+				'mobile_options'  => true,
+				'default'         => '500',
+				'default_tablet'  => '500',
+				'default_phone'  => '500',
+				'validate_unit'    => false,
+				'toggle_slug'     => 'main_content',
+				'range_settings'   => array(
+					'min'  => '100',
+					'max'  => '5000',
+					'step' => '100',
+				),
+			),
+
 
 		);
 		$fields = divienhancer_new_options($fields);
@@ -189,15 +217,24 @@ class DIVIENHANCER_flipbox extends ET_Builder_Module {
 	}
 
 	public function render( $attrs, $content = null, $render_slug ) {
+		$data = sprintf('
+		data-axis="%1$s"
+		data-speed="%2$s"
+		',
+		esc_html($this->props['axis']),
+		esc_html($this->props['speed'])
+		);
+
 
 		return sprintf('
-			<div class="divienhancer_flip_container">
-				<div class="divienhancer_flipper">
+			<div class="divienhancer-flip-container">
+				<div class="divienhancer-flipper" %2$s>
 				%1$s
 				</div>
 			</div>
 			',
-			et_sanitized_previously( $this->content )
+			et_sanitized_previously( $this->content ),
+			$data
 		);
 
 	}

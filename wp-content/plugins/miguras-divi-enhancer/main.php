@@ -3,7 +3,7 @@
 Plugin Name: DIVI Enhancer
 Plugin URI: https://miguras.com/divi_enhancer
 Description: Add custom modules and options to DIVI
-Version: 4.1
+Version: 4.2
 Author: Miguras
 Author URI: https://miguras.com
 License: GPLv2 or later
@@ -172,4 +172,7 @@ if(class_exists('Kirki')){
 
 $denotices = DIVIENHANCER_Admin_Notices::get_instance();
 $denotices->info( 'Try our FREE DIVI plugin DIVI Section Enhancer. You can use youtube videos as background, add scrollbars to section and more. Download it <a target="_blank" href="https://wordpress.org/plugins/dse-divi-section-enhancer/">here (wordpress.org download)</a> or dismiss this notice pressing the X at top right corner', 'dse-free' );
+
+
+
 ?>

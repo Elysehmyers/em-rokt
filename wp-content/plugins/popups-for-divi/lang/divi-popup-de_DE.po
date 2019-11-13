@@ -30,8 +30,8 @@ msgid "Popups for Divi"
 msgstr "Popups für Divi"
 
 #. Plugin URI of the plugin/theme
-msgid "https://philippstracker.com/divi-popup/"
-msgstr "https://philippstracker.com/divi-popup/"
+msgid "https://divimode.com/divi-popup/"
+msgstr "https://divimode.com/divi-popup/"
 
 #. Description of the plugin/theme
 msgid ""
@@ -45,5 +45,5 @@ msgid "Philipp Stracker"
 msgstr "Philipp Stracker"
 
 #. Author URI of the plugin/theme
-msgid "https://philippstracker.com/"
-msgstr "https://philippstracker.com/"
+msgid "https://divimode.com/"
+msgstr "https://divimode.com/"

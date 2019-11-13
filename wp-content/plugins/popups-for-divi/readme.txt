@@ -22,7 +22,7 @@ No configuration needed. Simply activate the plugin and add the CSS class "popup
 
 # ⭐️ Additional details
 
-Check out the [Plugin website](https://philippstracker.com/divi-popup/) for more details. You'll find:
+Check out the [Plugin website](https://divimode.com/divi-popup/) for more details. You'll find:
 
 * Examples
 * CSS class options
@@ -45,7 +45,7 @@ The course is available in your **wp-admin Dashboard** right after you install a
 
 # 🥳 Want more?
 
-If you want to get the most out of Divi, you need to have a look at **[Divi Areas Pro](https://philippstracker.com/divi-areas-pro)** to get additional features:
+If you want to get the most out of Divi, you need to have a look at **[Divi Areas Pro](https://divimode.com/divi-areas-pro)** to get additional features:
 
 > * An **admin UI** to create and configure your popups
 > * Choose **Area Type**: Popup, Inline, Fly-in, Hover
@@ -72,7 +72,7 @@ If you want to get the most out of Divi, you need to have a look at **[Divi Area
 > * **Great documentation** built into the plugin and an online knowledge base
 > * and much more...
 >
-> 👉 [Learn more about **Divi Areas Pro**](https://philippstracker.com/divi-areas-pro/) (with screenshots!)
+> 👉 [Learn more about **Divi Areas Pro**](https://divimode.com/divi-areas-pro/) (with screenshots!)
 
 == Installation ==
 
@@ -107,7 +107,7 @@ We did test it with all releases since the initial Divi 3.0 release. Possibly it
 
 Yes, actually it will! But out of the box it is optimized to work with Divi 3.x. If you use any other theme or site builder then you need to change the default options of the plugin via the `evr_divi_popup-js_data` filter.
 
-For more details visit https://philippstracker.com/divi-popup/
+For more details visit https://divimode.com/divi-popup/
 
 = Does this plugin display any ads? =
 
@@ -152,11 +152,11 @@ Alternatively you can replace the `popups-for-divi` folder via FTP: Extract the 
 
 = I have more questions or need help =
 
-Please first visit the [**plugin website**](https://philippstracker.com/divi-popup/), as it includes examples and documentation that could answer your questions.
+Please first visit the [**plugin website**](https://divimode.com/divi-popup/), as it includes examples and documentation that could answer your questions.
 
 If that does not help, then head over to the [**support forum**](https://wordpress.org/support/plugin/popups-for-divi/) and post a new thread.
 
-When you need additional features, then please have a look at our the Premium plugin [**Divi Areas Pro**](https://philippstracker.com/divi-areas-pro/) which comes with a lot of cool options!
+When you need additional features, then please have a look at our the Premium plugin [**Divi Areas Pro**](https://diivimode.com/divi-areas-pro/) which comes with a lot of cool options!
 
 We cannot provide customization and development via the forum. If you need that, [**you can hire us**](https://philippstracker.com/go/inquire-popup-change/) to create some special triggers, layouts or other changes.
 
@@ -167,10 +167,18 @@ We cannot provide customization and development via the forum. If you need that,
 3. Step 2: Add the popup-ID as a button link. Clicking this button will show the popup.
 4. That's all. Save the page and open it up without the editor. All popups are initially hidden.
 5. Click on the "Contact" button displays the popup. You can style the Divi section (change the width, background-color, etc) or customize the CSS of the popup...
-6. ...check out the extensive API documentation and popup samples on philippstracker.com
+6. ...check out the extensive API documentation and popup samples on divimode.com
 7. Our free email course walks you through every aspect of the plugin - from the basics to advanced use-cases and techniques.
 
 == Changelog ==
+
+= 1.7.0 =
+* Improve the JS API. We rewrote the API from ground up with tons of features and enhancements: Detailed debug logging, an all-new DiviArea base object with support for WordPress-like hooks, and much more!
+* Fix a bug where the Popup overlay was hidden too early when displaying more than one Popup at once
+* Fix wrong zIndex values when displaying multiple Areas at the same time
+* Fix some glitches in the JS script that triggers Divi Areas
+
+Plugin tested with WordPress 5.2.4 and Divi 4.0.6
 
 = 1.6.3 =
 * Fix animation glitch in Safari/iPhone that displayed the Popup too small when using Divis "Zoom" open animation.
@@ -180,8 +188,6 @@ We cannot provide customization and development via the forum. If you need that,
 
 = 1.6.2 =
 * Fix JS error in front.js
-
-Plugin tested with WordPress 5.2.3 and Divi 3.27.4
 
 = 1.6.0 =
 * Change Popup behavior: The size now matches the width of your Divi section! 🤩
