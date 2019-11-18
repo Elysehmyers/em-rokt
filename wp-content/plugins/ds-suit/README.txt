@@ -81,6 +81,15 @@ Nevertheless, there is no need for those add-ons and you can absolutely use all 
 Ideally you would not leave a negative review but contact us directly. Worpress.org currently can't notify us and we could miss your issue. If you contact us directly, for example via the contact form on our homepage, we can help you faster.
 
 == Changelog ==
+= 1.15.8 =
+* Post Feature Image module now always uses full size image in the lightbox
+* Masonry Gallery module borders now work correctly again
+* Post Title module bottom margins now work correctly again
+* Fixed admin notice to stay dismissed forever once dismissed
+
+= 1.15.7 =
+* Fixed double tap to open links on mobile in Bucket module
+
 = 1.15.6 =
 * Compatibility update for latest Divi version
 

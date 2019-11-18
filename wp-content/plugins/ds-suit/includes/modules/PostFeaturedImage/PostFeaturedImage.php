@@ -130,11 +130,9 @@ class DSS_Post_Featured_Image extends ET_Builder_Module
 
         $fields['hover_icon'] = [
             'label' => esc_html__('Hover Icon Picker', 'ds-suit'),
-            'type' => 'text',
             'option_category' => 'configuration',
             'class' => array('et-pb-font-icon'),
-            'renderer' => 'et_pb_get_font_icon_list',
-            'renderer_with_field' => true,
+            'type' => 'select_icon',
             'show_if' => [
                 'use_overlay' => ['on'],
             ],
@@ -316,7 +314,7 @@ class DSS_Post_Featured_Image extends ET_Builder_Module
         } else if ('lightbox' === $image_link) {
             $output = sprintf(
                 '<a href="%1$s" class="et_pb_lightbox_image" title="%3$s">%2$s</a>',
-                get_the_post_thumbnail_url(), //esc_url($src),
+                get_the_post_thumbnail_url(null, 'full'), //esc_url($src),
                 $output,
                 esc_attr($title_text)
             );

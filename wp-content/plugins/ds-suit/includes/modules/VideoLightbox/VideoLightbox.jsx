@@ -95,7 +95,7 @@ class VideoLightbox extends Component {
         }
 
         const target = 'on' === this.props.open_new_tab ? '_blank' : '';
-        const video = this.props.video.replace("youtu.be/", "youtube.com/watch?v=");
+        const video = this.props.video ? this.props.video.replace("youtu.be/", "youtube.com/watch?v=") : '';
         return (
             <div className="wrapper">
                 {image}

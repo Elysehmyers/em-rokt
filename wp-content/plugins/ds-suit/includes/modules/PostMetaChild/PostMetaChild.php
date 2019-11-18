@@ -268,11 +268,9 @@ class DSS_Post_Meta_Child extends ET_Builder_Module
 
         $fields['icon'] = array(
             'label' => esc_html__('Icon', 'ds-suit'),
-            'type' => 'text',
+            'type' => 'select_icon',
             'option_category' => 'configuration',
             'class' => array('et-pb-font-icon'),
-            'renderer' => 'et_pb_get_font_icon_list',
-            'renderer_with_field' => true,
             'tab_slug' => 'advanced',
             'toggle_slug' => 'meta',
             'show_if' => [

@@ -22,6 +22,7 @@ class DSS_Masonry_Layout extends ET_Builder_Module
     public function init()
     {
         $this->name = esc_html__('Sensei Masonry Gallery', 'ds-suit');
+        $this->main_css_element = '%%order_class%%.dss_masonry_gallery';
         $this->settings_modal_toggles = [
             'general' => [
                 'toggles' => [
@@ -297,8 +298,8 @@ class DSS_Masonry_Layout extends ET_Builder_Module
         $advanced_fields["borders"]["default"] = [
             'css' => [
                 'main' => [
-                    'border_radii' => "%%order_class%%",
-                    'border_styles' => "%%order_class%%",
+                    'border_radii' => "{$this->main_css_element}",
+                    'border_styles' => "{$this->main_css_element}",
                 ],
             ],
         ];
@@ -309,8 +310,8 @@ class DSS_Masonry_Layout extends ET_Builder_Module
             'tab_slug' => 'advanced',
             'css' => [
                 'main' => [
-                    'border_radii' => "%%order_class%% .grid .grid-item.et_pb_gallery_image",
-                    'border_styles' => "%%order_class%% .grid .grid-item.et_pb_gallery_image",
+                    'border_radii' => "{$this->main_css_element} .grid .grid-item.et_pb_gallery_image",
+                    'border_styles' => "{$this->main_css_element} .grid .grid-item.et_pb_gallery_image",
                 ],
             ],
         ];
@@ -320,7 +321,7 @@ class DSS_Masonry_Layout extends ET_Builder_Module
             'toggle_slug' => 'grid_items',
             'tab_slug' => 'advanced',
             'css' => [
-                'main' => "%%order_class%% .grid .grid-item.et_pb_gallery_image",
+                'main' => "{$this->main_css_element} .grid .grid-item.et_pb_gallery_image",
             ],
         ];
 

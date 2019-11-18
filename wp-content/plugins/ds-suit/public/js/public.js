@@ -205,12 +205,10 @@
         }
 
         var masonry = $this.masonry({
-            // set itemSelector so .grid-sizer is not used in layout
             itemSelector: '.grid-item',
-            // use element for option
             columnWidth: '.grid-sizer',
-            percentPosition: true,
             gutter: '.gutter-sizer',
+            percentPosition: true,
         });
 
         masonry.imagesLoaded().progress(function () {
@@ -218,7 +216,6 @@
         });
 
         $this.find('.grid-item a').magnificPopup({
-            // delegate: '.et_pb_gallery_image a',
             type: 'image',
             removalDelay: 500,
             gallery: {
@@ -228,7 +225,7 @@
             },
             mainClass: 'mfp-fade',
             zoom: {
-                enabled: true,//! et_pb_custom.is_builder_plugin_used,
+                enabled: true,
                 duration: 500,
                 opener: function (element) {
                     return element.find('img');
@@ -249,9 +246,6 @@
                 }
             },
         });
-
-        // prevent attaching of any further actions on click
-        // $this.find('a').unbind('click');
 
         return masonry.masonry('layout');
     };

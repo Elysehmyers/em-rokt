@@ -120,7 +120,7 @@ class MFE_VideoLightbox extends ET_Builder_Module
 
         $fields['play_button_icon_color'] = [
             'label' => esc_html__('Icon Color', 'ds-suit'),
-            'type' => 'color',
+            'type' => 'color-alpha',
             'tab_slug' => 'advanced',
             'toggle_slug' => 'colors',
             'default' => '#ffffff',
@@ -128,7 +128,7 @@ class MFE_VideoLightbox extends ET_Builder_Module
 
         $fields['play_button_background_color'] = [
             'label' => esc_html__('Background Color', 'ds-suit'),
-            'type' => 'color',
+            'type' => 'color-alpha',
             'tab_slug' => 'advanced',
             'toggle_slug' => 'colors',
             'default' => et_builder_accent_color(),
@@ -136,14 +136,14 @@ class MFE_VideoLightbox extends ET_Builder_Module
 
         $fields['play_button_icon_color_hover'] = [
             'label' => esc_html__('Icon Hover Color', 'ds-suit'),
-            'type' => 'color',
+            'type' => 'color-alpha',
             'tab_slug' => 'advanced',
             'toggle_slug' => 'colors',
         ];
 
         $fields['play_button_background_color_hover'] = [
             'label' => esc_html__('Background Hover Color', 'ds-suit'),
-            'type' => 'color',
+            'type' => 'color-alpha',
             'tab_slug' => 'advanced',
             'toggle_slug' => 'colors',
         ];

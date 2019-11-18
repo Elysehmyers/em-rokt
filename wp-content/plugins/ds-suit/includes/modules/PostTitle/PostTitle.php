@@ -156,6 +156,12 @@ class DSS_Post_Title extends ET_Builder_Module {
 			),
 		];
 
+        $advanced_fields['margin_padding'] = [
+            'css' => [
+                'important' => 'all',
+            ],
+        ];
+        
 		return $advanced_fields;
 	}
 

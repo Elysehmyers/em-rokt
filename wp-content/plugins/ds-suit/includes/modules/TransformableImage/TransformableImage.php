@@ -31,7 +31,7 @@ class DSS_TransformableImage extends ET_Builder_Module
     {
         return array(
             'image' => array(
-                'label' => esc_html__('ds-suit', 'ds-suit'),
+                'label' => esc_html__('Image', 'ds-suit'),
                 'type' => 'upload',
                 'option_category' => 'basic_option',
                 'description' => esc_html__('upload your image', 'ds-suit'),

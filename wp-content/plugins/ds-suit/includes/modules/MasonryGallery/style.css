@@ -41,3 +41,8 @@
 small.dss_masonry_gallery_caption {
 
 }
+
+.dss_masonry_gallery,
+.dss_masonry_gallery .grid-item {
+    border-style: solid;
+}

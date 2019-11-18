@@ -4,7 +4,7 @@
 Plugin Name: Battle Suit for Divi
 Plugin URI:  https://divi-sensei.com/suit
 Description: A useful collection of Divi modules and extensions.
-Version:     1.15.6
+Version:     1.15.8
 Author:      Divi Sensei
 Author URI:  https://divi-sensei.com
 License:     GPL2
@@ -37,7 +37,7 @@ require_once plugin_dir_path(__FILE__) . 'includes/persist-admin-notices-dismiss
 add_action( 'admin_init', array( 'PAnD', 'init' ) );
 
 add_action( 'admin_notices', function() {
-    $notification_key = "ds-suit-" . DIVI_SENSEI_SUIT_VERSION . '-advertise-add-ons';
+    $notification_key = "ds-suit-" . DIVI_SENSEI_SUIT_VERSION . '-advertise-add-ons-forever';
     if ( ! PAnD::is_admin_notice_active( $notification_key ) ) {
 		return;
 	}
@@ -49,9 +49,9 @@ add_action( 'admin_notices', function() {
             <?php 
             echo sprintf(
                 '%1$s <a href="%3$s">%2$s</a>',
-                __( 'Battle Suit for Divi has some <b>awesome premium features</b> to offer.', 'ds-suit') ,
-                __( 'Check out our add-ons', 'ds-suit'),
-                "admin.php?page=ds-suit-addons"
+                __( 'Did you know that Battle Suit for Divi has some really <b>awesome add-ons</b>?', 'ds-suit') ,
+                __( 'Start your free trial today!', 'ds-suit'),
+                admin_url("admin.php?page=ds-suit-addons")
             );
             ?>
             </div>
